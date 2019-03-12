@@ -1,0 +1,138 @@
+#+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0
+#+REVEAL_EXTRA_CSS: ./css/main.css
+
+
+#+REVEAL_TITLE_SLIDE: title-slide.html
+#+OPTIONS: toc:nil num:nil
+
+# Enable: browser history, fragment IDs in URLs, mouse wheel, links between presentations
+#+OPTIONS: reveal_history:t reveal_fragmentinurl:t
+#+OPTIONS: reveal_mousewheel:t reveal_inter_presentation_links:t
+
+# Disable separate PDF pages for each fragment.  Just use one per slide.
+#+OPTIONS: reveal_pdfseparatefragments:nil
+
+# Enable smart quotes
+#+OPTIONS: ':t
+
+# Transition styles: none/fade/slide/convex/concave/zoom/cube
+#+REVEAL_TRANS: concave
+#+REVEAL_THEME: white
+
+#+TITLE: Program Pengamatan Exoplanet di Observatorium Bosscha
+#+AUTHOR: Muhammad Yusuf
+#+DATE: 17 Maret 2019
+
+#+MACRO: color @@html:<font color="$1">$2</font>@@
+#+MACRO: titleback @@html:<span style="background:black;padding:10px"><font color="white">$1</font></span>@@
+* Ek $\cdot$ so $\cdot$ pla $\cdot$ net 
+  #+ATTR_HTML: :class org-center
+  /n Astron/: planet di luar tata surya
+
+** {{{titleback(Planet ada di mana-mana)}}}
+  :PROPERTIES:
+  :reveal_background: ./images/Planets_everywhere.jpg
+  :reveal_background_trans: slide
+  :END:
+
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/exo_discovery_histogram.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/orrery_movie.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+**  Trappist-1
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist-foto.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+** {{{titleback(How people think we saw exoplanets)}}}
+  :PROPERTIES:
+  :REVEAL_BACKGROUND: ./images/PIA17003.jpg
+  :END:
+
+** {{{titleback(How we really saw them)}}}
+  :PROPERTIES:
+  :REVEAL_BACKGROUND: ./images/eso1706h.jpg
+  :REVEAL_BACKGROUND_SIZE: 700px
+  :END:
+
+* Fotometri Transit Exoplanet
+**  
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/Transit graph.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+** Kurva Cahaya Transit
+    #+ATTR_HTML: :height 300px
+   [[./images/lightcurve.png]]
+   - Bintang/planet
+   - Radius
+   - Periode
+   - Inklinasi
+
+** Fotometri Bukaan
+    #+ATTR_HTML: :height 500px
+    [[./images/aperture.png]]
+
+
+** Fotometri Diferensial
+    #+ATTR_HTML: :height 300px
+    [[./images/differential.png]]
+    
+   Mengukur perbedaan fluks bintang 
+
+   Bintang variabel: Presisi 0.05 - 0.01 mag
+
+   Eksoplanet: Presisi 2 - 5 mmag
+
+** Menghitung Foton 
+   #+ATTR_REVEAL: :frag (fade-down)
+   ... dengan akurat dan @@html:<span class="fragment highlight-red">PRESISI</span>@@ ...
+   
+   ... memaksimalkan @@html:<span class="fragment highlight-red">SINYAL</span>@@ dan meminimalkan @@html:<span class="fragment highlight-red">NOISE</span>@@ ...
+
+** Perjalanan Foton
+   #+REVEAL_HTML: <div style="clear: left"></div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/star.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/andromeda.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/earth.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/dome.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/planewave1000.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/fw.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/ccd.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column">
+   #+ATTR_HTML: :height 200px
+   [[./images/komputer.jpg]]
+   #+REVEAL_HTML: </div>
+   
