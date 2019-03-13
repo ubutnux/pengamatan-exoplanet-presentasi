@@ -18,18 +18,20 @@
 # Transition styles: none/fade/slide/convex/concave/zoom/cube
 #+REVEAL_TRANS: concave
 #+REVEAL_THEME: white
+#+REVEAL_HTML: <style>.reveal section img { background:none; border:none; box-shadow:none; }
+#+REVEAL_HTML: </style>
 
 #+TITLE: Program Pengamatan Exoplanet di Observatorium Bosscha
 #+AUTHOR: Muhammad Yusuf
 #+DATE: 17 Maret 2019
 
 #+MACRO: color @@html:<font color="$1">$2</font>@@
-#+MACRO: titleback @@html:<span style="background:black;padding:10px"><font color="white">$1</font></span>@@
+#+MACRO: titleback @@html:<span style="background:$1;padding:10px"><font color="white">$2</font></span>@@
 * Ek $\cdot$ so $\cdot$ pla $\cdot$ net 
   #+ATTR_HTML: :class org-center
-  /n Astron/: planet di luar tata surya
+  /n Astron/: {{{titleback(brown, planet di luar tata surya)}}}
 
-** {{{titleback(Planet ada di mana-mana)}}}
+** {{{titleback(black, Planet ada di mana-mana)}}}
   :PROPERTIES:
   :reveal_background: ./images/Planets_everywhere.jpg
   :reveal_background_trans: slide
@@ -45,7 +47,7 @@
   :REVEAL_EXTRA_ATTR: data-background-video="./images/orrery_movie.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
 
-**  Trappist-1
+** {{{titleback(black, Trappist-1)}}}
   :PROPERTIES:
   :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
@@ -55,12 +57,12 @@
   :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist-foto.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
 
-** {{{titleback(How people think we saw exoplanets)}}}
+** {{{titleback(black, How people think we saw exoplanets)}}}
   :PROPERTIES:
   :REVEAL_BACKGROUND: ./images/PIA17003.jpg
   :END:
 
-** {{{titleback(How we really saw them)}}}
+** {{{titleback(black, How we really saw them)}}}
   :PROPERTIES:
   :REVEAL_BACKGROUND: ./images/eso1706h.jpg
   :REVEAL_BACKGROUND_SIZE: 700px
@@ -99,10 +101,11 @@
    #+ATTR_REVEAL: :frag (fade-down)
    ... dengan akurat dan @@html:<span class="fragment highlight-red">PRESISI</span>@@ ...
    
+   #+ATTR_REVEAL: :frag (fade-down)
    ... memaksimalkan @@html:<span class="fragment highlight-red">SINYAL</span>@@ dan meminimalkan @@html:<span class="fragment highlight-red">NOISE</span>@@ ...
 
 ** Perjalanan Foton
-   #+REVEAL_HTML: <div style="clear: left"></div>
+   #+REVEAL_HTML: <div style="clear:left"></div>
    #+REVEAL_HTML: <div class="column">
    #+ATTR_HTML: :height 200px
    [[./images/star.jpg]]
@@ -136,3 +139,362 @@
    [[./images/komputer.jpg]]
    #+REVEAL_HTML: </div>
    
+** Citra Medan Datar
+   [[./images/flat.jpg]]
+** Citra Medan Datar
+   [[./images/flat1.jpg]]
+** Citra Medan Datar
+   [[./images/flat2.jpg]]
+
+* Meminimalkan pergerakan bintang
+   #+ATTR_REVEAL: :frag (fade-down)
+  Sedapat mungkin bintang jatuh pada piksel yang sama selama pengamatan eksoplanet (4-6 jam)
+   #+ATTR_REVEAL: :frag (fade-down)
+  - Pergerakan bintang (pada CCD) adalah fungsi dari:
+    + Kesalahan Polar Alignment
+    + Waktu integrasi
+    + Panjang fokus
+    + Deklinasi target
+    + Jarak antara bintang target dan bintang pemandu
+  - Meminimalkan kesalahan periodik mounting
+  - Mounting yang seimbang
+  - Autoguiding
+
+* Autoguiding
+**  Teleskop pemandu terpisah
+   #+ATTR_HTML: :height 600px
+    [[./images/IMG_0111.jpg]]
+** Pemandu off-axis
+   #+ATTR_HTML: :height 600px
+    [[./images/offaxis.jpg]]
+** Pemandu on-axis
+   #+ATTR_HTML: :height 600px
+    [[./images/onaxiss.jpg]]
+** Pemandu dengan menggunakan kamera utama
+   Waktu koreksi $\geq$ waktu eksposur kamera utama
+
+** Rotasi medan
+   [[./images/rotasi-medan.jpg]]
+
+** Perbedaan kelenturan   
+   [[./images/flexure_smears.jpg]]
+
+* Rekam Jejak Pengamatan Eksoplanet di Observatorium Bosscha
+** 2006
+   [[./images/ratna.jpg]] 
+** 
+   [[./images/ratna-lc.jpg]]
+
+** 2014
+   [[./images/denny.jpg]]
+** 
+   [[./images/denny-lc.jpg]]
+** 2016
+   [[./images/yusuf.jpg]]
+** 
+   [[./images/yusuf-lc.jpg]]
+** 
+   [[./images/ridlo.jpg]]
+** 
+   [[./images/ridlo-lc.jpg]]
+** 
+   [[./images/whit.jpg]]
+** 
+   [[./images/whit-lc.jpg]]
+** 
+   [[./images/denny2.jpg]]
+** 
+   [[./images/denny2-lc.jpg]]
+** 2018
+   [[./images/yusuf2.jpg]]
+** 
+   [[./images/yusuf2-lc.jpg]]
+** Belum dipublikasikan (2015-2018)
+   [[./images/kurvaexo.jpg]]
+
+* Instrumen Pengamatan
+* {{{titleback(black, Bosscha Robotic Telescope)}}}
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/2015062627.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+  (BRT)
+  #+REVEAL_HTML: <br/><br/><br/>
+  
+** Planewave CDK14
+*** Spesifikasi teknis
+   |-----------------------+--------------------------------|
+   | Desain Optik          | /Corrected Dall Kirkham/       |
+   | Diameter              | 356mm (14inchi)                |
+   | Panjang fokus         | 2563mm                         |
+   | /Focal Ratio/         | f/7.2                          |
+   | Medan pandang optimum | Lingkaran dengan diameter 70mm |
+   | Desain badan          | /Carbon fiber truss/           |
+   | /Central Obstruction/ | 23.5% /surface area/           |
+   |                       | 48.5% diameter                 |
+   |-----------------------+--------------------------------|
+*** Perlengkapan tambahan
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   Kipas Pendingin
+   [[./images/CDK14-rear-view-web1.jpg]]
+   #+REVEAL_HTML: </div> 
+   #+REVEAL_HTML: <div class="column-2">
+   Sistem Pemanas
+   [[./images/DeltaTmounted.jpg]]
+   #+REVEAL_HTML: </div> 
+*** /Hedrick focuser/
+    Teleskop dilengkapi dengan /focuser/ motorik yang mampu menahan beban hingga 10kg. /Focuser/ dapat bergerak sejauh 3,25 cm dengan ketelitian 1 mikron.
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/EFA-w_600196-hand-control.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/IMG_1129.jpg]]
+   #+REVEAL_HTML: </div>
+** Kamera FLI Proline 11002
+   | Sensor        | Kodak KAI-11002          |
+   | Jumlah piksel | 4008(H) $\times$ 2672(V) |
+   | Ukuran piksel | 9 mikron                 |
+   | Pendingin     | 65 $^o$ C di bawah ambien |
+   | Medan pandang | 48.20' $\times$ 32.26'   |
+   | Resolusi      | 0.72"/piksel             |
+   | Shutter       | Elektronik               |
+
+   #+ATTR_HTML: :height 200px
+   [[./images/qe.jpg]]
+
+** Filter 2" Custom Scientific BVRI
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/fw.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/ubvri.jpg]]
+   #+REVEAL_HTML: </div>
+
+** Mounting Astro-Physics 1600 GTO
+   | Kapasistas beban         | 100kg                      |
+   | Resolusi motor /encoder/ | 0.05"/tik                  |
+   | Kecepatan gerak maksimum | 5 $^o$ /detik              |
+   | /Periodic error/         | $\pm$ 2.5" dalam 6.4 menit |
+   
+   
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <br/><br/><div class="column-2">
+   - Kedua arah gerak dapat diatur kecepatannya secara bebas
+   - Kondisi meridian flip dapat diatur
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   #+ATTR_HTML: :height 200px
+   [[./images/ap.jpg]]
+   #+REVEAL_HTML: </div>
+   
+*** 
+  :PROPERTIES:
+  :reveal_background: ./images/tracking.jpg
+  :reveal_background_trans: slide
+  :END:
+*** 
+  :PROPERTIES:
+  :reveal_background: ./images/tracking-center.jpg
+  :reveal_background_trans: slide
+  :END:
+
+* Sistem Robotik
+** Perangkat Lunak
+   - Skrip Python2.7 (2013) - ACP (2015) - skrip Python3.7 (2017)
+   - Memanfaatkan ASCOM, COM model, dan objek JSON dari MaximDL, TheSky6/X, PinPoint/Astrometry.net, PWI Focuser/Focusmax, dan OpenPHDGuiding
+   - Bersifat modular
+     + Modul kamera
+     + Modul mounting
+     + Modul guider
+     + Modul focuser
+     + Modul platesolve
+     + Modul logger
+     + Modul parser
+     + Modul utama
+** Modul Guider
+   Melakukan /close-loop guiding/ dengan menggunakan kamera utama. Diadaptasi dari NGTS dan SPECULOOS (McCormac, 2013)
+   #+ATTR_HTML: :height 400px
+   [[./images/guider.png]]
+** Modul Focuser
+   /Autofocusing/ melalui /V-Curve Half-Flux/ Diameter bintang
+   
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <br/><br/><div class="column-2">
+   [[./images/hfd.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   #+ATTR_HTML: :height 200px
+   [[./images/hyperbol.png]]
+   #+REVEAL_HTML: </div>
+
+** Modul Platesolve
+   - Astrometri/pengenalan pola bintang terdeteksi terhadap katalog bintang
+   - PinPoint/TheSkyX/astrometry.net
+   - Katalog bintang menggunakan GSC1.1 dan USNO-B
+   
+* Pengamatan
+  - Citra kalibrator
+  - Mulai 1 jam sebelum peristiwa transit dan berakhir 1 jam setelah peristiwa transit
+  - Menjaga bintang tetap jatuh pada piksel yang sama
+  
+* Olah dan analisis data
+  - Citra mentah
+  - Citra bersih
+  - Kurva cahaya dari fotometri diferensial
+  - /Deterending/
+  - Parameter fisis eksoplanet
+  - Interpretasi
+
+* 
+  :PROPERTIES:
+  :reveal_background: ./images/weneedyou.png
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/md-nasa-clean-p5-perna.jpg
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/programmer.jpg
+  :reveal_background_size: 600px
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/analis.jpg
+  :reveal_background_trans: zoom
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/saintis.jpg
+  :reveal_background_trans: zoom
+  :END:
+
+* Peluang Riset Eksoplanet
+  - Konfirmasi eksoplanet baru - proyek KELT
+  - Memperbarui dan mempertajam parameter planet yang telah diketahui
+  - Mengamati dan mencari /Transit Timing Variation/ - proyek ETD
+  - Tindak lanjut pengamatan landas bumi kandidat TESS
+
+* Roadmap
+   #+ATTR_HTML: :height 500px
+  [[./images/roadmap.jpg]]
+
+* TESS
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/tess_spacecraft_cameras.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2"><br/><br/>
+   - Survei seluruh area langit untuk bintang-bintang terang dalam jarak 200 parsek
+   - Mencari dan mengukur massa 50 planet dengan radius < 4 kali radius Bumi
+   - "/Finder/" untuk JWST
+   #+REVEAL_HTML: </div>
+   
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/tess1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+
+** Spesifikasi
+   | Medan pandang tunggal     | $24^o \times 24^o$ |
+   | Medan pandang total       | $24^o \times 96^o$ |
+   | Diameter                  | 10,5 cm            |
+   | /Focal ratio/             | f/1,4              |
+   | Rentang panjang gelombang | 600 - 1000 nm      |
+
+** Medan Pandang BRT
+   [[./images/wasp52.jpg]]
+
+** Ukuran Piksel BRT
+   [[./images/tess-pixel.jpg]]
+
+** Ukuran Piksel TESS
+   [[./images/tess-pixel2.jpg]]
+
+** Ukuran Piksel TESS
+   [[./images/tess-pixel3.jpg]]
+
+** Ukuran bukaan fotometri TESS
+   [[./images/tess-aperture.jpg]]
+
+** Tantangan TESS
+   - Cahaya beberapa bintang sangat mungkin menyatu pada citra TESS
+   - Penurunan intensitas cahaya bisa jadi 'eksoplanet' atau penyebab lainnya (/false positive/)
+   - Perlu pengamatan tindak lanjut landas bumi
+
+* TESS Follow-up Working Group
+  - *Seeing-limited Photometry* to identify false positives due to variable stars such as eclipsing binaries that contaminate the TESS image of a candidate transiting planet.
+  - *Recon Spectroscopy* to identify astrophysical false positives and to contribute to improved stellar parameters for the host star in those cases where the uncertainty in the planetary mass and radius is limited by the uncertainties in the mass and radius of the host star.
+  #+REVEAL: split
+  - *High-resolution Imaging* with adaptive optics, speckle imaging, and/or lucky imaging to detect nearby objects that are not resolved in the TESS Input Catalog or by Seeing-limited Photometry.
+  - *Precise Radial Velocity Work* with the goal of deriving orbits for the planet(s) orbiting the host star for the determination of planetary mass(es) relative to the host star.
+  - *Space-based Photometry* with facilities such as HST, Spitzer, MOST, CHEOPS, and JWST, primarily to confirm and/or improve the photometric ephemerides provided by TESS, but also to provide improved light curves for transit events or even transit time variations in some cases. 
+
+** Peluang publikasi
+   - TFOP WG members who *contribute* results that are useful to *promote a candidate to the next level* of follow-up should also be invited to join as an author if the candidate is ultimately published. An example is *time-series photometry* of a target that does not detect a shallow transit in the target, but does show that no detectable events occur in nearby stars that contaminate the TESS aperture.
+   - If a member submits *25 consecutive null results* before his/her contributions have been recognized by authorship on a paper, then the member will be extended the option of *authorship on a compensatory TFOP WG member-led paper*, even if none of the member’s results contributed directly to that paper.
+   
+** Preferred Applicant Capabilities SG1
+   - Applicants should ideally *have access* to a facility with the capability to *maintain the position of the field* on the detector to *within a few pixels* throughout a sequence of time-series observations.
+   - *On-axis guiding* is preferred over off-axis guiding, but both are preferred over no telescope guiding.
+   - Also, *pixel scales of 1 arcsec* or less are preferred.
+   - Applicants should also be *capable* of calibrating their own image sets, performing differential photometry, and submitting light curve plots, finder field images, and photometric data to ExoFOP-TESS.
+
+* Identifikasi /false-positive/
+  
+   #+REVEAL_HTML: <div class="column-2">
+   #+ATTR_HTML: :height 300px
+   [[./images/corot9b_transit_Hires.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   #+ATTR_HTML: :height 300px
+   [[./images/j_AMNS.2016.2.00027_fig_003.jpg]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div style="clear:left"></div>
+  - Bentuk kurva cahaya
+  - Kedalaman kurva cahaya yang silih berganti
+  - Variasi kedalaman pada filter yang berbeda
+  - Besar kedalaman
+    
+* TESS Object of Interest
+  - TESS Candidate Target List v6: 3.805.509
+  - TESS Object of Interest: 408
+
+* Peluang Kolaborasi
+  [[./images/kelt.jpg]]
+ 
+* Peluang pengamatan
+  - Batasan
+    + Fajar astronomi
+    + Ketinggian minimum: 30 derajat
+    + Jarak sudut bulan: 50 derajat
+    + $V \lt 13$
+    + $dv \gt 10$ mmag
+    + Durasi transit $\lt 3$ jam
+  - Untuk tahun 2019: 348 pengamatan, 2 objek per malam
+
+* Kendala dan tantangan
+  - Cuaca
+  - Cuaca
+  - Cuaca
+  - Tenaga peneliti
+  - Perlu instrumen yang lebih baik
+  - Fotometri multi filter
+  - Kombinasi pengamatan fotometri dan spektroskopi
+
+
+* Ikhtisar
+  - Pengamatan eksoplanet di Observatorium Bosscha memberikan hasil yang cukup menjanjikan
+  - Pengembangan instrumen, pengamatan, sistem, olah data, dan analisis masih dapat dikembangkan lebih jauh
+  - Ajakan ke seluruh pihak untuk bergabung dalam program pengamatan eksoplanet
+  - Peluang kolaborasi untuk tindak lanjut TESS
+
+
