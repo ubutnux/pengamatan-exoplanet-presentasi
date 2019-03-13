@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Program Pengamatan Exoplanet di Observatorium Bosscha</title>
+<meta name="author" content="Muhammad Yusuf"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="./css/main.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<div class="talk-title">
+    <h1 style="font-size: 40px; color:brown;" class="no-toc-progress">Program Pengamatan Exoplanet di Observatorium Bosscha</h1>
+</div>
+<div class="talk-subtitle">
+    <p></p>
+</div>
+<div class="talk-author">
+    <p>Muhammad Yusuf<br />
+        17 Maret 2019</p>
+</div>
+
+</section>
+<style>.reveal section img { background:none; border:none; box-shadow:none; }
+</style>
+<section>
+<section id="slide-orge233195">
+<h2 id="orge233195">Ek \(\cdot\) so \(\cdot\) pla \(\cdot\) net</h2>
+<p class="org-center">
+<i>n Astron</i>: <span style="background:brown;padding:10px"><font color="white"> planet di luar tata surya</font></span>
+</p>
+
+</section>
+<section id="slide-org7ae569c" data-background="./images/Planets_everywhere.jpg" data-background-transition="slide">
+<h3 id="org7ae569c"><span style="background:black;padding:10px"><font color="white"> Planet ada di mana-mana</font></span></h3>
+
+</section>
+<section id="slide-org16a1a1d" data-background-video="./images/exo_discovery_histogram.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="org16a1a1d"></h3>
+
+</section>
+<section id="slide-org917a85d" data-background-video="./images/orrery_movie.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="org917a85d"></h3>
+
+</section>
+<section id="slide-orgbb5c853" data-background-video="./images/trappist1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="orgbb5c853"><span style="background:black;padding:10px"><font color="white"> Trappist-1</font></span></h3>
+
+</section>
+<section id="slide-orgccdd463" data-background-video="./images/trappist-foto.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="orgccdd463"></h3>
+
+</section>
+<section id="slide-org33f389c" data-background="./images/PIA17003.jpg">
+<h3 id="org33f389c"><span style="background:black;padding:10px"><font color="white"> How people think we saw exoplanets</font></span></h3>
+
+</section>
+<section id="slide-orga266d36" data-background="./images/eso1706h.jpg" data-background-size="700px">
+<h3 id="orga266d36"><span style="background:black;padding:10px"><font color="white"> How we really saw them</font></span></h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org2fa917f">
+<h2 id="org2fa917f">Fotometri Transit Exoplanet</h2>
+<div class="outline-text-2" id="text-org2fa917f">
+</div>
+</section>
+<section id="slide-orgd2d10ac" data-background-video="./images/Transit graph.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="orgd2d10ac"></h3>
+
+</section>
+<section id="slide-orgb124715">
+<h3 id="orgb124715">Kurva Cahaya Transit</h3>
+
+<div class="figure">
+<p><img src="./images/lightcurve.png" alt="lightcurve.png" height="300px" />
+</p>
+</div>
+<ul>
+<li>Bintang/planet</li>
+<li>Radius</li>
+<li>Periode</li>
+<li>Inklinasi</li>
+
+</ul>
+
+</section>
+<section id="slide-org26da102">
+<h3 id="org26da102">Fotometri Bukaan</h3>
+
+<div class="figure">
+<p><img src="./images/aperture.png" alt="aperture.png" height="500px" />
+</p>
+</div>
+
+
+</section>
+<section id="slide-org6713ef5">
+<h3 id="org6713ef5">Fotometri Diferensial</h3>
+
+<div class="figure">
+<p><img src="./images/differential.png" alt="differential.png" height="300px" />
+</p>
+</div>
+
+<p>
+Mengukur perbedaan fluks bintang 
+</p>
+
+<p>
+Bintang variabel: Presisi 0.05 - 0.01 mag
+</p>
+
+<p>
+Eksoplanet: Presisi 2 - 5 mmag
+</p>
+
+</section>
+<section id="slide-org8ae0774">
+<h3 id="org8ae0774">Menghitung Foton</h3>
+<p class="fragment (fade-down)">
+&#x2026; dengan akurat dan <span class="fragment highlight-red">PRESISI</span> &#x2026;
+</p>
+
+<p class="fragment (fade-down)">
+&#x2026; memaksimalkan <span class="fragment highlight-red">SINYAL</span> dan meminimalkan <span class="fragment highlight-red">NOISE</span> &#x2026;
+</p>
+
+</section>
+<section id="slide-org1d07f34">
+<h3 id="org1d07f34">Perjalanan Foton</h3>
+<div style="clear:left"></div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/star.jpg" alt="star.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/andromeda.jpg" alt="andromeda.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/earth.jpg" alt="earth.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/dome.jpg" alt="dome.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/planewave1000.jpg" alt="planewave1000.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/fw.jpg" alt="fw.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/ccd.jpg" alt="ccd.jpg" height="200px" />
+</p>
+</div>
+</div>
+<div class="column">
+
+<div class="figure">
+<p><img src="./images/komputer.jpg" alt="komputer.jpg" height="200px" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-orgfe1f106">
+<h3 id="orgfe1f106">Citra Medan Datar</h3>
+
+<div class="figure">
+<p><img src="./images/flat.jpg" alt="flat.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org58b5390">
+<h3 id="org58b5390">Citra Medan Datar</h3>
+
+<div class="figure">
+<p><img src="./images/flat1.jpg" alt="flat1.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org885302e">
+<h3 id="org885302e">Citra Medan Datar</h3>
+
+<div class="figure">
+<p><img src="./images/flat2.jpg" alt="flat2.jpg" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaf63437">
+<h2 id="orgaf63437">Meminimalkan pergerakan bintang</h2>
+<p class="fragment (fade-down)">
+Sedapat mungkin bintang jatuh pada piksel yang sama selama pengamatan eksoplanet (4-6 jam)
+</p>
+<ul>
+<li class="fragment fade-down">Pergerakan bintang (pada CCD) adalah fungsi dari:
+<ul>
+<li>Kesalahan Polar Alignment</li>
+<li>Waktu integrasi</li>
+<li>Panjang fokus</li>
+<li>Deklinasi target</li>
+<li>Jarak antara bintang target dan bintang pemandu</li>
+
+</ul></li>
+<li class="fragment fade-down">Meminimalkan kesalahan periodik mounting</li>
+<li class="fragment fade-down">Mounting yang seimbang</li>
+<li class="fragment fade-down">Autoguiding</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1e99a7c">
+<h2 id="org1e99a7c">Autoguiding</h2>
+<div class="outline-text-2" id="text-org1e99a7c">
+</div>
+</section>
+<section id="slide-orgf34c5af">
+<h3 id="orgf34c5af">Teleskop pemandu terpisah</h3>
+
+<div class="figure">
+<p><img src="./images/IMG_0111.jpg" alt="IMG_0111.jpg" height="600px" />
+</p>
+</div>
+</section>
+<section id="slide-org1402309">
+<h3 id="org1402309">Pemandu off-axis</h3>
+
+<div class="figure">
+<p><img src="./images/offaxis.jpg" alt="offaxis.jpg" height="600px" />
+</p>
+</div>
+</section>
+<section id="slide-org1f644fe">
+<h3 id="org1f644fe">Pemandu on-axis</h3>
+
+<div class="figure">
+<p><img src="./images/onaxiss.jpg" alt="onaxiss.jpg" height="600px" />
+</p>
+</div>
+</section>
+<section id="slide-orgee990ef">
+<h3 id="orgee990ef">Pemandu dengan menggunakan kamera utama</h3>
+<p>
+Waktu koreksi \(\geq\) waktu eksposur kamera utama
+</p>
+
+</section>
+<section id="slide-org467fc6f">
+<h3 id="org467fc6f">Rotasi medan</h3>
+
+<div class="figure">
+<p><img src="./images/rotasi-medan.jpg" alt="rotasi-medan.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc11a17e">
+<h3 id="orgc11a17e">Perbedaan kelenturan</h3>
+
+<div class="figure">
+<p><img src="./images/flexure_smears.jpg" alt="flexure_smears.jpg" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org1352e14">
+<h2 id="org1352e14">Rekam Jejak Pengamatan Eksoplanet di Observatorium Bosscha</h2>
+<div class="outline-text-2" id="text-org1352e14">
+</div>
+</section>
+<section id="slide-org650e692">
+<h3 id="org650e692">2006</h3>
+
+<div class="figure">
+<p><img src="./images/ratna.jpg" alt="ratna.jpg" /> 
+</p>
+</div>
+</section>
+<section id="slide-org8ca949f">
+<h3 id="org8ca949f"></h3>
+
+<div class="figure">
+<p><img src="./images/ratna-lc.jpg" alt="ratna-lc.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgd8236e2">
+<h3 id="orgd8236e2">2014</h3>
+
+<div class="figure">
+<p><img src="./images/denny.jpg" alt="denny.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgb427035">
+<h3 id="orgb427035"></h3>
+
+<div class="figure">
+<p><img src="./images/denny-lc.jpg" alt="denny-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org6a447e5">
+<h3 id="org6a447e5">2016</h3>
+
+<div class="figure">
+<p><img src="./images/yusuf.jpg" alt="yusuf.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org9df0514">
+<h3 id="org9df0514"></h3>
+
+<div class="figure">
+<p><img src="./images/yusuf-lc.jpg" alt="yusuf-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org3ff04c4">
+<h3 id="org3ff04c4"></h3>
+
+<div class="figure">
+<p><img src="./images/ridlo.jpg" alt="ridlo.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org1bc20c5">
+<h3 id="org1bc20c5"></h3>
+
+<div class="figure">
+<p><img src="./images/ridlo-lc.jpg" alt="ridlo-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org1d0866e">
+<h3 id="org1d0866e"></h3>
+
+<div class="figure">
+<p><img src="./images/whit.jpg" alt="whit.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org0ae934e">
+<h3 id="org0ae934e"></h3>
+
+<div class="figure">
+<p><img src="./images/whit-lc.jpg" alt="whit-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgf4e7c15">
+<h3 id="orgf4e7c15"></h3>
+
+<div class="figure">
+<p><img src="./images/denny2.jpg" alt="denny2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org8da2115">
+<h3 id="org8da2115"></h3>
+
+<div class="figure">
+<p><img src="./images/denny2-lc.jpg" alt="denny2-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org89b9dff">
+<h3 id="org89b9dff">2018</h3>
+
+<div class="figure">
+<p><img src="./images/yusuf2.jpg" alt="yusuf2.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-orgfa27eb7">
+<h3 id="orgfa27eb7"></h3>
+
+<div class="figure">
+<p><img src="./images/yusuf2-lc.jpg" alt="yusuf2-lc.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org9aecb82">
+<h3 id="org9aecb82">Belum dipublikasikan (2015-2018)</h3>
+
+<div class="figure">
+<p><img src="./images/kurvaexo.jpg" alt="kurvaexo.jpg" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org7d017be">
+<h2 id="org7d017be">Instrumen Pengamatan</h2>
+</section>
+</section>
+<section>
+<section id="slide-orge6d836f" data-background-video="./images/2015062627.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h2 id="orge6d836f"><span style="background:black;padding:10px"><font color="white"> Bosscha Robotic Telescope</font></span></h2>
+<p>
+(BRT)
+</p>
+<br/><br/><br/>
+
+</section>
+<section id="slide-org1fa4c6e">
+<h3 id="org1fa4c6e">Planewave CDK14</h3>
+<div class="outline-text-3" id="text-org1fa4c6e">
+</div>
+</section>
+<section id="slide-org6db9088">
+<h4 id="org6db9088">Spesifikasi teknis</h4>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Desain Optik</td>
+<td class="org-left"><i>Corrected Dall Kirkham</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Diameter</td>
+<td class="org-left">356mm (14inchi)</td>
+</tr>
+
+<tr>
+<td class="org-left">Panjang fokus</td>
+<td class="org-left">2563mm</td>
+</tr>
+
+<tr>
+<td class="org-left"><i>Focal Ratio</i></td>
+<td class="org-left">f/7.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Medan pandang optimum</td>
+<td class="org-left">Lingkaran dengan diameter 70mm</td>
+</tr>
+
+<tr>
+<td class="org-left">Desain badan</td>
+<td class="org-left"><i>Carbon fiber truss</i></td>
+</tr>
+
+<tr>
+<td class="org-left"><i>Central Obstruction</i></td>
+<td class="org-left">23.5% <i>surface area</i></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">48.5% diameter</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-orgd19080d">
+<h4 id="orgd19080d">Perlengkapan tambahan</h4>
+<div style="clear:left"></div>
+<div class="column-2">
+<p>
+Kipas Pendingin
+<img src="./images/CDK14-rear-view-web1.jpg" alt="CDK14-rear-view-web1.jpg" />
+</p>
+</div>
+<div class="column-2">
+<p>
+Sistem Pemanas
+<img src="./images/DeltaTmounted.jpg" alt="DeltaTmounted.jpg" />
+</p>
+</div>
+</section>
+<section id="slide-org08c95b7">
+<h4 id="org08c95b7"><i>Hedrick focuser</i></h4>
+<p>
+Teleskop dilengkapi dengan <i>focuser</i> motorik yang mampu menahan beban hingga 10kg. <i>Focuser</i> dapat bergerak sejauh 3,25 cm dengan ketelitian 1 mikron.
+</p>
+<div style="clear:left"></div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/EFA-w_600196-hand-control.jpg" alt="EFA-w_600196-hand-control.jpg" />
+</p>
+</div>
+</div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/IMG_1129.jpg" alt="IMG_1129.jpg" />
+</p>
+</div>
+</div>
+</section>
+<section id="slide-orgb436fc7">
+<h3 id="orgb436fc7">Kamera FLI Proline 11002</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Sensor</td>
+<td class="org-left">Kodak KAI-11002</td>
+</tr>
+
+<tr>
+<td class="org-left">Jumlah piksel</td>
+<td class="org-left">4008(H) \(\times\) 2672(V)</td>
+</tr>
+
+<tr>
+<td class="org-left">Ukuran piksel</td>
+<td class="org-left">9 mikron</td>
+</tr>
+
+<tr>
+<td class="org-left">Pendingin</td>
+<td class="org-left">65 \(^o\) C di bawah ambien</td>
+</tr>
+
+<tr>
+<td class="org-left">Medan pandang</td>
+<td class="org-left">48.20&rsquo; \(\times\) 32.26&rsquo;</td>
+</tr>
+
+<tr>
+<td class="org-left">Resolusi</td>
+<td class="org-left">0.72&ldquo;/piksel</td>
+</tr>
+
+<tr>
+<td class="org-left">Shutter</td>
+<td class="org-left">Elektronik</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="figure">
+<p><img src="./images/qe.jpg" alt="qe.jpg" height="200px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org26aa6ff">
+<h3 id="org26aa6ff">Filter 2&ldquo; Custom Scientific BVRI</h3>
+<div style="clear:left"></div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/fw.jpg" alt="fw.jpg" />
+</p>
+</div>
+</div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/ubvri.jpg" alt="ubvri.jpg" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-org79955fc">
+<h3 id="org79955fc">Mounting Astro-Physics 1600 GTO</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Kapasistas beban</td>
+<td class="org-left">100kg</td>
+</tr>
+
+<tr>
+<td class="org-left">Resolusi motor <i>encoder</i></td>
+<td class="org-left">0.05&ldquo;/tik</td>
+</tr>
+
+<tr>
+<td class="org-left">Kecepatan gerak maksimum</td>
+<td class="org-left">5 \(^o\) /detik</td>
+</tr>
+
+<tr>
+<td class="org-left"><i>Periodic error</i></td>
+<td class="org-left">\(\pm\) 2.5&ldquo; dalam 6.4 menit</td>
+</tr>
+</tbody>
+</table>
+
+
+<div style="clear:left"></div>
+<br/><br/><div class="column-2">
+<ul>
+<li>Kedua arah gerak dapat diatur kecepatannya secara bebas</li>
+<li>Kondisi meridian flip dapat diatur</li>
+
+</ul>
+</div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/ap.jpg" alt="ap.jpg" height="200px" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-org8330df3" data-background="./images/tracking.jpg" data-background-transition="slide">
+<h4 id="org8330df3"></h4>
+</section>
+<section id="slide-orgb14ee4e" data-background="./images/tracking-center.jpg" data-background-transition="slide">
+<h4 id="orgb14ee4e"></h4>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd1aff5a">
+<h2 id="orgd1aff5a">Sistem Robotik</h2>
+<div class="outline-text-2" id="text-orgd1aff5a">
+</div>
+</section>
+<section id="slide-org1b8ed16">
+<h3 id="org1b8ed16">Perangkat Lunak</h3>
+<ul>
+<li>Skrip Python2.7 (2013) - ACP (2015) - skrip Python3.7 (2017)</li>
+<li>Memanfaatkan ASCOM, COM model, dan objek JSON dari MaximDL, TheSky6/X, PinPoint/Astrometry.net, PWI Focuser/Focusmax, dan OpenPHDGuiding</li>
+<li>Bersifat modular
+<ul>
+<li>Modul kamera</li>
+<li>Modul mounting</li>
+<li>Modul guider</li>
+<li>Modul focuser</li>
+<li>Modul platesolve</li>
+<li>Modul logger</li>
+<li>Modul parser</li>
+<li>Modul utama</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org48ed3ec">
+<h3 id="org48ed3ec">Modul Guider</h3>
+<p>
+Melakukan <i>close-loop guiding</i> dengan menggunakan kamera utama. Diadaptasi dari NGTS dan SPECULOOS (McCormac, 2013)
+</p>
+
+<div class="figure">
+<p><img src="./images/guider.png" alt="guider.png" height="400px" />
+</p>
+</div>
+</section>
+<section id="slide-org688098f">
+<h3 id="org688098f">Modul Focuser</h3>
+<p>
+<i>Autofocusing</i> melalui <i>V-Curve Half-Flux</i> Diameter bintang
+</p>
+
+<div style="clear:left"></div>
+<br/><br/><div class="column-2">
+
+<div class="figure">
+<p><img src="./images/hfd.jpg" alt="hfd.jpg" />
+</p>
+</div>
+</div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/hyperbol.png" alt="hyperbol.png" height="200px" />
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-orgbbc34df">
+<h3 id="orgbbc34df">Modul Platesolve</h3>
+<ul>
+<li>Astrometri/pengenalan pola bintang terdeteksi terhadap katalog bintang</li>
+<li>PinPoint/TheSkyX/astrometry.net</li>
+<li>Katalog bintang menggunakan GSC1.1 dan USNO-B</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc38e7af">
+<h2 id="orgc38e7af">Pengamatan</h2>
+<ul>
+<li>Citra kalibrator</li>
+<li>Mulai 1 jam sebelum peristiwa transit dan berakhir 1 jam setelah peristiwa transit</li>
+<li>Menjaga bintang tetap jatuh pada piksel yang sama</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org5f48597">
+<h2 id="org5f48597">Olah dan analisis data</h2>
+<ul>
+<li>Citra mentah</li>
+<li>Citra bersih</li>
+<li>Kurva cahaya dari fotometri diferensial</li>
+<li><i>Deterending</i></li>
+<li>Parameter fisis eksoplanet</li>
+<li>Interpretasi</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcc053e8" data-background="./images/weneedyou.png" data-background-transition="zoom">
+<h2 id="orgcc053e8"></h2>
+</section>
+<section id="slide-org5056bc6" data-background="./images/md-nasa-clean-p5-perna.jpg" data-background-transition="zoom">
+<h3 id="org5056bc6"></h3>
+
+</section>
+<section id="slide-org839e266" data-background="./images/programmer.jpg" data-background-size="600px" data-background-transition="zoom">
+<h3 id="org839e266"></h3>
+
+</section>
+<section id="slide-orga053a29" data-background="./images/analis.jpg" data-background-transition="zoom">
+<h3 id="orga053a29"></h3>
+</section>
+<section id="slide-org5f4d604" data-background="./images/saintis.jpg" data-background-transition="zoom">
+<h3 id="org5f4d604"></h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org7354dd1">
+<h2 id="org7354dd1">Peluang Riset Eksoplanet</h2>
+<ul>
+<li>Konfirmasi eksoplanet baru - proyek KELT</li>
+<li>Memperbarui dan mempertajam parameter planet yang telah diketahui</li>
+<li>Mengamati dan mencari <i>Transit Timing Variation</i> - proyek ETD</li>
+<li>Tindak lanjut pengamatan landas bumi kandidat TESS</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org25fa1a3">
+<h2 id="org25fa1a3">Roadmap</h2>
+
+<div class="figure">
+<p><img src="./images/roadmap.jpg" alt="roadmap.jpg" height="500px" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org4b0df47">
+<h2 id="org4b0df47">TESS</h2>
+<div style="clear:left"></div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/tess_spacecraft_cameras.jpg" alt="tess_spacecraft_cameras.jpg" />
+</p>
+</div>
+</div>
+<div class="column-2"><br/><br/>
+<ul>
+<li>Survei seluruh area langit untuk bintang-bintang terang dalam jarak 200 parsek</li>
+<li>Mencari dan mengukur massa 50 planet dengan radius &lt; 4 kali radius Bumi</li>
+<li>&ldquo;<i>Finder</i>&rdquo; untuk JWST</li>
+
+</ul>
+</div>
+
+</section>
+<section id="slide-orga194d54" data-background-video="./images/tess1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true">
+<h3 id="orga194d54"></h3>
+
+</section>
+<section id="slide-org5ebfa9b">
+<h3 id="org5ebfa9b">Spesifikasi</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Medan pandang tunggal</td>
+<td class="org-left">\(24^o \times 24^o\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Medan pandang total</td>
+<td class="org-left">\(24^o \times 96^o\)</td>
+</tr>
+
+<tr>
+<td class="org-left">Diameter</td>
+<td class="org-left">10,5 cm</td>
+</tr>
+
+<tr>
+<td class="org-left"><i>Focal ratio</i></td>
+<td class="org-left">f/1,4</td>
+</tr>
+
+<tr>
+<td class="org-left">Rentang panjang gelombang</td>
+<td class="org-left">600 - 1000 nm</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+<section id="slide-org8ba642a">
+<h3 id="org8ba642a">Medan Pandang BRT</h3>
+
+<div class="figure">
+<p><img src="./images/wasp52.jpg" alt="wasp52.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org5840024">
+<h3 id="org5840024">Ukuran Piksel BRT</h3>
+
+<div class="figure">
+<p><img src="./images/tess-pixel.jpg" alt="tess-pixel.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org605a321">
+<h3 id="org605a321">Ukuran Piksel TESS</h3>
+
+<div class="figure">
+<p><img src="./images/tess-pixel2.jpg" alt="tess-pixel2.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9bd1713">
+<h3 id="org9bd1713">Ukuran Piksel TESS</h3>
+
+<div class="figure">
+<p><img src="./images/tess-pixel3.jpg" alt="tess-pixel3.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org5cb3e67">
+<h3 id="org5cb3e67">Ukuran bukaan fotometri TESS</h3>
+
+<div class="figure">
+<p><img src="./images/tess-aperture.jpg" alt="tess-aperture.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org3190af2">
+<h3 id="org3190af2">Tantangan TESS</h3>
+<ul>
+<li>Cahaya beberapa bintang sangat mungkin menyatu pada citra TESS</li>
+<li>Penurunan intensitas cahaya bisa jadi &rsquo;eksoplanet&rsquo; atau penyebab lainnya (<i>false positive</i>)</li>
+<li>Perlu pengamatan tindak lanjut landas bumi</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org3b2ba0c">
+<h2 id="org3b2ba0c">TESS Follow-up Working Group</h2>
+<ul>
+<li><b>Seeing-limited Photometry</b> to identify false positives due to variable stars such as eclipsing binaries that contaminate the TESS image of a candidate transiting planet.</li>
+<li><b>Recon Spectroscopy</b> to identify astrophysical false positives and to contribute to improved stellar parameters for the host star in those cases where the uncertainty in the planetary mass and radius is limited by the uncertainties in the mass and radius of the host star.</li>
+
+</ul>
+</section>
+<section >
+<ul>
+<li><b>High-resolution Imaging</b> with adaptive optics, speckle imaging, and/or lucky imaging to detect nearby objects that are not resolved in the TESS Input Catalog or by Seeing-limited Photometry.</li>
+<li><b>Precise Radial Velocity Work</b> with the goal of deriving orbits for the planet(s) orbiting the host star for the determination of planetary mass(es) relative to the host star.</li>
+<li><b>Space-based Photometry</b> with facilities such as HST, Spitzer, MOST, CHEOPS, and JWST, primarily to confirm and/or improve the photometric ephemerides provided by TESS, but also to provide improved light curves for transit events or even transit time variations in some cases.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgfc18c10">
+<h3 id="orgfc18c10">Peluang publikasi</h3>
+<ul>
+<li>TFOP WG members who <b>contribute</b> results that are useful to <b>promote a candidate to the next level</b> of follow-up should also be invited to join as an author if the candidate is ultimately published. An example is <b>time-series photometry</b> of a target that does not detect a shallow transit in the target, but does show that no detectable events occur in nearby stars that contaminate the TESS aperture.</li>
+<li>If a member submits <b>25 consecutive null results</b> before his/her contributions have been recognized by authorship on a paper, then the member will be extended the option of <b>authorship on a compensatory TFOP WG member-led paper</b>, even if none of the member’s results contributed directly to that paper.</li>
+
+</ul>
+
+</section>
+<section id="slide-org13b565f">
+<h3 id="org13b565f">Preferred Applicant Capabilities SG1</h3>
+<ul>
+<li>Applicants should ideally <b>have access</b> to a facility with the capability to <b>maintain the position of the field</b> on the detector to <b>within a few pixels</b> throughout a sequence of time-series observations.</li>
+<li><b>On-axis guiding</b> is preferred over off-axis guiding, but both are preferred over no telescope guiding.</li>
+<li>Also, <b>pixel scales of 1 arcsec</b> or less are preferred.</li>
+<li>Applicants should also be <b>capable</b> of calibrating their own image sets, performing differential photometry, and submitting light curve plots, finder field images, and photometric data to ExoFOP-TESS.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga8424c3">
+<h2 id="orga8424c3">Identifikasi <i>false-positive</i></h2>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/corot9b_transit_Hires.jpg" alt="corot9b_transit_Hires.jpg" height="300px" />
+</p>
+</div>
+</div>
+<div class="column-2">
+
+<div class="figure">
+<p><img src="./images/j_AMNS.2016.2.00027_fig_003.jpg" alt="j_AMNS.2016.2.00027_fig_003.jpg" height="300px" />
+</p>
+</div>
+</div>
+<div style="clear:left"></div>
+<ul>
+<li>Bentuk kurva cahaya</li>
+<li>Kedalaman kurva cahaya yang silih berganti</li>
+<li>Variasi kedalaman pada filter yang berbeda</li>
+<li>Besar kedalaman</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcf8b685">
+<h2 id="orgcf8b685">TESS Object of Interest</h2>
+<ul>
+<li>TESS Candidate Target List v6: 3.805.509</li>
+<li>TESS Object of Interest: 408</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org25f310e">
+<h2 id="org25f310e">Peluang Kolaborasi</h2>
+
+<div class="figure">
+<p><img src="./images/kelt.jpg" alt="kelt.jpg" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5478f89">
+<h2 id="org5478f89">Peluang pengamatan</h2>
+<ul>
+<li>Batasan
+<ul>
+<li>Fajar astronomi</li>
+<li>Ketinggian minimum: 30 derajat</li>
+<li>Jarak sudut bulan: 50 derajat</li>
+<li>\(V \lt 13\)</li>
+<li>\(dv \gt 10\) mmag</li>
+<li>Durasi transit \(\lt 3\) jam</li>
+
+</ul></li>
+<li>Untuk tahun 2019: 348 pengamatan, 2 objek per malam</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org15aa3f4">
+<h2 id="org15aa3f4">Kendala dan tantangan</h2>
+<ul>
+<li>Cuaca</li>
+<li>Cuaca</li>
+<li>Cuaca</li>
+<li>Tenaga peneliti</li>
+<li>Perlu instrumen yang lebih baik</li>
+<li>Fotometri multi filter</li>
+<li>Kombinasi pengamatan fotometri dan spektroskopi</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org110757a">
+<h2 id="org110757a">Ikhtisar</h2>
+<ul>
+<li>Pengamatan eksoplanet di Observatorium Bosscha memberikan hasil yang cukup menjanjikan</li>
+<li>Pengembangan instrumen, pengamatan, sistem, olah data, dan analisis masih dapat dikembangkan lebih jauh</li>
+<li>Ajakan ke seluruh pihak untuk bergabung dalam program pengamatan eksoplanet</li>
+<li>Peluang kolaborasi untuk tindak lanjut TESS</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: true,
+fragmentInURL: true,
+pdfSeparateFragments: false,
+
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
