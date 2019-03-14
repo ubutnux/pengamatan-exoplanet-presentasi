@@ -21,7 +21,7 @@
 #+REVEAL_HTML: <style>.reveal section img { background:none; border:none; box-shadow:none; }
 #+REVEAL_HTML: </style>
 
-#+TITLE: Program Pengamatan Exoplanet di Observatorium Bosscha
+#+TITLE: Program Pengamatan Exoplanet Observatorium Bosscha
 #+AUTHOR: Muhammad Yusuf
 #+DATE: 17 Maret 2019
 
@@ -29,9 +29,9 @@
 #+MACRO: titleback @@html:<span style="background:$1;padding:10px"><font color="white">$2</font></span>@@
 * Ek $\cdot$ so $\cdot$ pla $\cdot$ net 
   #+ATTR_HTML: :class org-center
-  /n Astron/: {{{titleback(brown, planet di luar tata surya)}}}
+  /n Astron/: planet di luar tata surya
 
-** {{{titleback(black, Planet ada di mana-mana)}}}
+** Planet ada di mana-mana
   :PROPERTIES:
   :reveal_background: ./images/Planets_everywhere.jpg
   :reveal_background_trans: slide
@@ -47,7 +47,7 @@
   :REVEAL_EXTRA_ATTR: data-background-video="./images/orrery_movie.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
 
-** {{{titleback(black, Trappist-1)}}}
+** Trappist-1
   :PROPERTIES:
   :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist1.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
@@ -57,12 +57,12 @@
   :REVEAL_EXTRA_ATTR: data-background-video="./images/trappist-foto.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
 
-** {{{titleback(black, How people think we saw exoplanets)}}}
+** How people think we saw exoplanets
   :PROPERTIES:
   :REVEAL_BACKGROUND: ./images/PIA17003.jpg
   :END:
 
-** {{{titleback(black, How we really saw them)}}}
+** How we really saw them
   :PROPERTIES:
   :REVEAL_BACKGROUND: ./images/eso1706h.jpg
   :REVEAL_BACKGROUND_SIZE: 700px
@@ -213,7 +213,7 @@
    [[./images/kurvaexo.jpg]]
 
 * Instrumen Pengamatan
-* {{{titleback(black, Bosscha Robotic Telescope)}}}
+* Bosscha Robotic Telescope
   :PROPERTIES:
   :REVEAL_EXTRA_ATTR: data-background-video="./images/2015062627.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
@@ -334,19 +334,42 @@
    - PinPoint/TheSkyX/astrometry.net
    - Katalog bintang menggunakan GSC1.1 dan USNO-B
    
+* Kriteria Eksoplanet
+   + Transit berada dalam rentang senja dan fajar astronomi
+   + Ketinggian minimum: 30 derajat
+   + Jarak sudut bulan: 50 derajat
+   + $V \lt 13$
+   + $dv \gt 10$ mmag
+   + Durasi transit $\lt 3$ jam
+
 * Pengamatan
-  - Citra kalibrator
+  - Citra kalibrator saat senja dan/atau fajar
+  - /Focusing/
+  - Kalibrasi waktu
   - Mulai 1 jam sebelum peristiwa transit dan berakhir 1 jam setelah peristiwa transit
   - Menjaga bintang tetap jatuh pada piksel yang sama
+  - Waktu eksposur dan binning sesuai kecerlangan bintang dan resolusi waktu
+  - Mode fokus untuk bintang > 8 mag
+    - Citra defokus dengan FWHM: 10-20 piksel
   
 * Olah dan analisis data
   - Citra mentah
   - Citra bersih
+  - Konversi waktu BJD dan platesolve
+  #+REVEAL: split
   - Kurva cahaya dari fotometri diferensial
+    - Bintang pembanding dengan kecerlangan sama
+    - Bintang pembanding dengan warna sama
+    - Bukaan sesuai profil seeing
+    #+ATTR_HTML: :height 300px
+      [[./images/seeing.jpg]]
+  #+REVEAL: split
   - /Deterending/
   - Parameter fisis eksoplanet
-  - Interpretasi
-
+  
+    LEMON - EXONAILER (The EXOplanet traNsits and rAdIal veLocity fittER)
+   
+    AIJ (ImageJ for Astronomy)
 * 
   :PROPERTIES:
   :reveal_background: ./images/weneedyou.png
@@ -467,19 +490,12 @@
 * TESS Object of Interest
   - TESS Candidate Target List v6: 3.805.509
   - TESS Object of Interest: 408
+  - Peluang pengamatan di Observatorium Bosscha:
+    + Tahun 2019: 348 Pengamatan, 2 obyek per malam
 
 * Peluang Kolaborasi
   [[./images/kelt.jpg]]
  
-* Peluang pengamatan
-  - Batasan
-    + Fajar astronomi
-    + Ketinggian minimum: 30 derajat
-    + Jarak sudut bulan: 50 derajat
-    + $V \lt 13$
-    + $dv \gt 10$ mmag
-    + Durasi transit $\lt 3$ jam
-  - Untuk tahun 2019: 348 pengamatan, 2 objek per malam
 
 * Kendala dan tantangan
   - Cuaca

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 .reveal,
 .reveal h1,
 .reveal h2,
@@ -6,6 +7,11 @@
 .reveal h5,
 .reveal h6 {
     font-family: "Montserrat", Impact, sans-serif;
+}
+.reveal h2:not(:empty), h3:not(:empty){
+    color: white;
+    background: brown;
+    padding: 10px;
 }
 .reveal{
     font-size:30px;
