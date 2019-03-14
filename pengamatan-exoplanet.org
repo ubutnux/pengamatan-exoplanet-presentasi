@@ -370,6 +370,32 @@
     LEMON - EXONAILER (The EXOplanet traNsits and rAdIal veLocity fittER)
    
     AIJ (ImageJ for Astronomy)
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/lightcurve-wasp52.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+** 
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/Measurements.png]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/fitting.jpg]]
+   #+REVEAL_HTML: </div>
+** 
+   | Parameter                |      Obs | Ref (Hebrard, 2012) |
+   |--------------------------+----------+---------------------|
+   | Periode (hari)           | 1.74977* |             1.74977 |
+   | Eksentrisitas            |        0 |                   0 |
+   | Radius Bintang $R_\odot$ |    0.79* |                0.79 |
+   | /Limb Darkening/ u1      |    0.527 |                   - |
+   | /Limb Darkening/ u2      |    0.179 |                   - |
+   | Durasi transit (hari)    |   0.0797 |              0.0754 |
+   | Rasio planet bintang     |   0.0275 |              0.0271 |
+   | /Impact parameter/       |   0.5882 |                 0.6 |
+   | Inklinasi                |   85.235 |               85.35 |
+   | Radius planet            |    1.275 |                1.27 |
+    
 * 
   :PROPERTIES:
   :reveal_background: ./images/weneedyou.png
