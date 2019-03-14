@@ -23,7 +23,7 @@
 
 #+TITLE: Program Pengamatan Exoplanet Observatorium Bosscha
 #+AUTHOR: Muhammad Yusuf
-#+DATE: 17 Maret 2019
+#+DATE: 15 Maret 2019
 
 #+MACRO: color @@html:<font color="$1">$2</font>@@
 #+MACRO: titleback @@html:<span style="background:$1;padding:10px"><font color="white">$2</font></span>@@
