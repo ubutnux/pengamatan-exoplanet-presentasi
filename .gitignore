@@ -2,3 +2,8 @@
 *.tex
 auto/abstrak.el
 *.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.gz
+*.out

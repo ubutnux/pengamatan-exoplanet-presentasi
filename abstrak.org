@@ -2,15 +2,14 @@
 #+TITLE: Program Pengamatan Exoplanet Observatorium Bosscha
 #+Author: Muhammad Yusuf
 #+Email: yusuf@as.itb.ac.id
-#+DATE: 15 Maret 2019
+#+DATE: 4 April 2019
 #+Options: toc:nil ':t *:nil -:nil ::nil <:nil ^:t author:t d:t H:5 |:t
-#+LATEX_HEADER: \usepackage[bahasa]
 #+latex_class_options: [12pt]
-#+latex_header: \onehalfspacing{babel}
+#+LATEX_HEADER: \documentclass[a4paper]{/home/ucup/Documents/latex-templates/IOP-latex-template/jpconf}
 
-#+BEGIN_ABSTRACT
+#+BEGIN_abstract
 Pengetahuan manusia tentang sistem keplanetan di luar tata surya kita telah berkembang jauh hanya dalam 20 tahun belakangan, mulai dari konfirmasi akan keberadaan eksoplanet hingga kepada detail karakteristik planet. Diluncurkannya misi satelit eksoplanet telah mempercepat laju deteksi keberadaan eksoplanet dalam beberapa tahun belakangan dan akan terus begitu untuk beberapa dekade ke depan. Eksoplanet merupakan salah satu topik terdepan dalam arah perkembangan astronomi modern saat ini.
  
 Pengamatan deteksi eksoplanet di Obsevatorium Bosscha telah diinisiasi sejak tahun 2006. Pekerjaan lanjutannya menunjukkan progres yang semakin menjanjikan. Presentasi kali ini akan menceritakan bagaimana pekerjaan pengamatan eksoplanet dilakukan di Observatorium Bosscha, instrumen yang digunakan, sistem pengamatan yang dikembangkan, serta pekerjaan-pekerjaan lanjutan yang penting untuk dikerjakan guna mengejar laju perkembangan pengetahuan eksoplanet di dunia.
-#+END_ABSTRACT
+#+END_abstract
 
