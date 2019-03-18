@@ -1,4 +1,3 @@
-
 #+TITLE: Program Pengamatan Exoplanet Observatorium Bosscha
 #+Author: Muhammad Yusuf
 #+Email: yusuf@as.itb.ac.id
