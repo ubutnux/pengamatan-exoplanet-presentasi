@@ -1,7 +1,6 @@
 #+REVEAL_ROOT: reveal.js
 #+REVEAL_EXTRA_CSS: ./css/main.css
 
-
 #+REVEAL_TITLE_SLIDE: title-slide.html
 #+OPTIONS: toc:nil num:nil
 
