@@ -1,9 +1,10 @@
 
 *.tex
-auto/abstrak.el
+auto/
 *.log
 *.aux
 *.fdb_latexmk
 *.fls
 *.gz
 *.out
+.#*
