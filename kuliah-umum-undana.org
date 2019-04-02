@@ -213,11 +213,107 @@
   :END:
   (BRT) 
 
+* Kriteria Eksoplanet
+   + Transit berada dalam rentang senja dan fajar astronomi
+   + Ketinggian minimum: 30 derajat
+   + Jarak sudut bulan: 50 derajat
+   + $V \lt 13$
+   + $dv \gt 10$ mmag
+   + Durasi transit $\lt 3$ jam
+
+* Pengamatan
+  - Citra kalibrator saat senja dan/atau fajar
+  - /Focusing/
+  - Kalibrasi waktu
+  - Mulai 1 jam sebelum peristiwa transit dan berakhir 1 jam setelah peristiwa transit
+  - Menjaga bintang tetap jatuh pada piksel yang sama
+  - Waktu eksposur dan binning sesuai kecerlangan bintang dan resolusi waktu
+  - Mode fokus untuk bintang > 8 mag
+    - Citra defokus dengan FWHM: 10-20 piksel
+  
+* Olah dan analisis data
+  - Citra mentah
+  - Citra bersih
+  - Konversi waktu BJD dan platesolve
+  #+REVEAL: split
+  - Kurva cahaya dari fotometri diferensial
+    - Bintang pembanding dengan kecerlangan sama
+    - Bintang pembanding dengan warna sama
+    - Bukaan sesuai profil seeing
+    #+ATTR_HTML: :height 300px
+      [[./images/seeing.jpg]]
+  #+REVEAL: split
+  - /Deterending/
+  - Parameter fisis eksoplanet
+  
+    LEMON - EXONAILER (The EXOplanet traNsits and rAdIal veLocity fittER)
+   
+    AIJ (ImageJ for Astronomy)
+** 
+  :PROPERTIES:
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/lightcurve-wasp52.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
+  :END:
+** 
+   #+REVEAL_HTML: <div style="clear:left"></div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/Measurements.png]]
+   #+REVEAL_HTML: </div>
+   #+REVEAL_HTML: <div class="column-2">
+   [[./images/fitting.jpg]]
+   #+REVEAL_HTML: </div>
+** 
+   | Parameter                |      Obs | Ref (Hebrard, 2012) |
+   |--------------------------+----------+---------------------|
+   | Periode (hari)           | 1.74977* |             1.74977 |
+   | Eksentrisitas            |        0 |                   0 |
+   | Radius Bintang $R_\odot$ |    0.79* |                0.79 |
+   | /Limb Darkening/ u1      |    0.527 |                   - |
+   | /Limb Darkening/ u2      |    0.179 |                   - |
+   | Durasi transit (hari)    |   0.0797 |              0.0754 |
+   | Rasio planet bintang     |   0.0275 |              0.0271 |
+   | /Impact parameter/       |   0.5882 |                 0.6 |
+   | Inklinasi                |   85.235 |               85.35 |
+   | Radius planet            |    1.275 |                1.27 |
+    
+* 
+  :PROPERTIES:
+  :reveal_background: ./images/weneedyou.png
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/md-nasa-clean-p5-perna.jpg
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/programmer.jpg
+  :reveal_background_size: 600px
+  :reveal_background_trans: zoom
+  :END:
+
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/analis.jpg
+  :reveal_background_trans: zoom
+  :END:
+** 
+  :PROPERTIES:
+  :reveal_background: ./images/saintis.jpg
+  :reveal_background_trans: zoom
+  :END:
+
 * Peluang Riset Eksoplanet
   - Konfirmasi eksoplanet baru - proyek KELT
   - Memperbarui dan mempertajam parameter planet yang telah diketahui
   - Mengamati dan mencari /Transit Timing Variation/ - proyek ETD
   - Tindak lanjut pengamatan landas bumi kandidat TESS
+
+* Roadmap
+   #+ATTR_HTML: :height 500px
+  [[./images/roadmap.jpg]]
 
 * TESS
    #+REVEAL_HTML: <div style="clear:left"></div>
@@ -278,10 +374,50 @@
   - Variasi kedalaman pada filter yang berbeda
   - Besar kedalaman
     
+* TESS Object of Interest
+  - TESS Candidate Target List v6: 3.805.509
+  - TESS Object of Interest: 408
+  - Peluang pengamatan di Observatorium Bosscha:
+    + Tahun 2019: 348 Pengamatan, 2 obyek per malam
+
+* Peluang Kolaborasi
+  [[./images/kelt.jpg]]
+ 
+* Kendala dan tantangan
+  - Cuaca
+  - Cuaca
+  - Cuaca
+  - Polusi cahaya
+  - Tenaga peneliti
+  - Perlu instrumen yang lebih baik
+  - Fotometri multi filter
+  - Kombinasi pengamatan fotometri dan spektroskopi
+
 * Pemanfaatan Teleskop ITB-UNDANA
-  - Penelitian
-  - Pendidikan
-  - Pengabdian Masyarakat
+** Penelitian
+#+REVEAL_HTML: <div class="column-2">
+- Pengamatan fotometri
+  + Eksoplanet
+  + Bintang Variabel
+- Pengamatan astrometri asteroid (NEA dan NEO)
+- Instrumentasi
+- Olah data
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column-2">
+  @@html:<video controls autoplay loop>
+  <source data-src="./images/asteroid-long.mp4" type="video/mp4" />
+  </video>@@
+#+REVEAL_HTML: </div>
+
+** Pendidikan
+- Perkuliahan
+- Tugas akhir /  tesis
+- Pertukaran mahasiswa
+
+** Pengabdian Masyarakat
+- Kunjungan sekolah/umum
+- Pengamatan virtual
+
 * Ikhtisar
   - Pengamatan eksoplanet di Observatorium Bosscha memberikan hasil yang cukup menjanjikan
   - Pengembangan instrumen, pengamatan, sistem, olah data, dan analisis masih dapat dikembangkan lebih jauh
