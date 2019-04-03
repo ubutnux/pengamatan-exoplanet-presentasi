@@ -21,12 +21,19 @@
 #+REVEAL_HTML: <style>.reveal section img { background:none; border:none; box-shadow:none; }
 #+REVEAL_HTML: </style>
 
-#+TITLE: Program Pengamatan Exoplanet Observatorium Bosscha
+#+TITLE: Program Pengamatan Eksoplanet Observatorium Bosscha
 #+SUBTTILE: Kuliah umum program studi Fisika FST UNDANA
 #+AUTHOR: Muhammad Yusuf
 #+DATE: 4 April 2019
 
 #+MACRO: color @@html:<font color="$1">$2</font>@@
+* 
+:PROPERTIES:
+:reveal_background: ./images/kupel.jpg
+:reveal_background_trans: slide
+:END:
+
+
 * Ek $\cdot$ so $\cdot$ pla $\cdot$ net 
   #+ATTR_HTML: :class org-center
   /n Astron/: planet di luar tata surya
@@ -35,7 +42,16 @@
   :PROPERTIES:
   :REVEAL_EXTRA_ATTR: data-background-video="./images/47_LostInGlareH264FullSize.mp4"; data-background-video-loop="loop"; data-background-size="contain"; data-background-video-muted="true"
   :END:
-** How people think we saw exoplanets
+** Foto terjauh matahari
+:PROPERTIES:
+:reveal_background: ./images/PIA00450_modest.jpg
+:reveal_background_trans: slide
+:END:
+#+BEGIN_NOTES
+- foto matahari dari 6 milyar km
+- bintang terdekat 3.97E13
+#+END_NOTES
+** How people think we saw eksoplanets
   :PROPERTIES:
   :REVEAL_BACKGROUND: ./images/PIA17003.jpg
   :END:
@@ -73,7 +89,7 @@
   :END:
 ** 1995: Kecepatan Radial
   :PROPERTIES:
-  :REVEAL_EXTRA_ATTR: data-background-video="./images/Artist’s impression of the exoplanet 51 Pegasi b.mp4"; data-background-video-loop="loop"; data-background-size="contain"; data-background-video-muted="true"
+  :REVEAL_EXTRA_ATTR: data-background-video="./images/Artist’s impression of the eksoplanet 51 Pegasi b.mp4"; data-background-video-loop="loop"; data-background-size="contain"; data-background-video-muted="true"
   :END:
   {{{color(white, Pegasi 51 b)}}}
   
@@ -90,7 +106,7 @@
     </video>@@
 ** 1999: Fotometri Transit
   :PROPERTIES:
-  :REVEAL_BACKGROUND: ./images/Exoplanet_Comparison_HD_209458_b.png
+  :REVEAL_BACKGROUND: ./images/Eksoplanet_Comparison_HD_209458_b.png
   :END:
   {{{color(white, HD 209458 b)}}}
   #+BEGIN_NOTES
@@ -133,7 +149,7 @@
   :REVEAL_EXTRA_ATTR: data-background-video="./images/exo_discovery_histogram.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
   :END:
 
-* Fotometri Transit Exoplanet
+* Fotometri Transit Eksoplanet
 **  
   :PROPERTIES:
   :REVEAL_EXTRA_ATTR: data-background-video="./images/Transit graph.mp4"; data-background-video-loop="false"; data-background-size="contain"; data-background-video-muted="true"
@@ -246,7 +262,7 @@
   - /Deterending/
   - Parameter fisis eksoplanet
   
-    LEMON - EXONAILER (The EXOplanet traNsits and rAdIal veLocity fittER)
+    LEMON - EXONAILER (The Eksoplanet traNsits and rAdIal veLocity fittER)
    
     AIJ (ImageJ for Astronomy)
 ** 
